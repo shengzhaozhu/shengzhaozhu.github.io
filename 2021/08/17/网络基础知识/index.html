@@ -135,29 +135,29 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="IP基础知识"><a href="#IP基础知识" class="headerlink" title="IP基础知识"></a>IP基础知识</h2><p>IP地址（Internet Protocol Address）是指互联⽹协议地址，⼜译为⽹际协议地址。IP地址是IP协议提供的⼀种 统⼀的地址格式，它为互联⽹上的每⼀个⽹络和每⼀台主机分配⼀个逻辑地址，以此来屏蔽物理地址的差异。 IP地址分类 IP地址根据⽹络号和主机号来分，分为A、B、C三类及特殊地址D、E。 全0和全1的都保留不⽤。 </p>
-<p>A类：(1.0.0.0-126.0.0.0)（默认⼦⽹掩码：255.0.0.0或 0xFF000000）第⼀个字节为⽹络号，后三个字节为 主机号。该类IP地址的最前⾯为“0”，所以地址的⽹络号取值于1~126之间。⼀般⽤于⼤型⽹络。 </p>
-<p>B类：(128.0.0.0-191.255.0.0)（默认⼦⽹掩码：255.255.0.0或0xFFFF0000）前两个字节为⽹络号，后两个 字节为主机号。该类IP地址的最前⾯为“10”，所以地址的⽹络号取值于128~191之间。⼀般⽤于中等规模⽹ 络。</p>
-<p>C类：(192.0.0.0-223.255.255.0)（⼦⽹掩码：255.255.255.0或 0xFFFFFF00）前三个字节为⽹络号，最后 ⼀个字节为主机号。该类IP地址的最前⾯为“110”，所以地址的⽹络号取值于192~223之间。⼀般⽤于⼩型 ⽹络。 </p>
-<p>D类：是多播地址。该类IP地址的最前⾯为“1110”，所以地址的⽹络号取值于224~239之间。⼀般⽤于多路 ⼴播⽤户[1] 。</p>
-<p>E类：是保留地址。该类IP地址的最前⾯为“1111”，所以地址的⽹络号取值于240~255之间。 在IP地址3种主要类型⾥，各保留了3个区域作为 私有地址 ，其地址范围如下： A类地址：10.0.0.0～10.255.255.255 B类地址：172.16.0.0～172.31.255.255 C类地址：192.168.0.0～192.168.255.255 回送地址：127.0.0.1。 也是本机地址，等效于localhost或本机IP。⼀般⽤于测试使⽤。例如：ping 127.0.0.1来测试本机TCP/IP是否正常。</p>
+        <h2 id="IP基础知识"><a href="#IP基础知识" class="headerlink" title="IP基础知识"></a>IP基础知识</h2><p><strong>IP地址</strong>（Internet Protocol Address）是指互联⽹协议地址，⼜译为⽹际协议地址。IP地址是IP协议提供的⼀种 统⼀的地址格式，它为互联⽹上的每⼀个⽹络和每⼀台主机分配⼀个逻辑地址，以此来屏蔽物理地址的差异。 IP地址分类 IP地址根据⽹络号和主机号来分，分为A、B、C三类及特殊地址D、E。 全0和全1的都保留不⽤。 </p>
+<p><strong>A类</strong>：(1.0.0.0-126.0.0.0)（默认⼦⽹掩码：255.0.0.0或 0xFF000000）第⼀个字节为⽹络号，后三个字节为 主机号。该类IP地址的最前⾯为“0”，所以地址的⽹络号取值于1~126之间。⼀般⽤于⼤型⽹络。 </p>
+<p><strong>B类</strong>：(128.0.0.0-191.255.0.0)（默认⼦⽹掩码：255.255.0.0或0xFFFF0000）前两个字节为⽹络号，后两个 字节为主机号。该类IP地址的最前⾯为“10”，所以地址的⽹络号取值于128~191之间。⼀般⽤于中等规模⽹ 络。</p>
+<p><strong>C类</strong>：(192.0.0.0-223.255.255.0)（⼦⽹掩码：255.255.255.0或 0xFFFFFF00）前三个字节为⽹络号，最后 ⼀个字节为主机号。该类IP地址的最前⾯为“110”，所以地址的⽹络号取值于192~223之间。⼀般⽤于⼩型 ⽹络。 </p>
+<p><strong>D类</strong>：是多播地址。该类IP地址的最前⾯为“1110”，所以地址的⽹络号取值于224~239之间。⼀般⽤于多路 ⼴播⽤户[1] 。</p>
+<p><strong>E类</strong>：是保留地址。该类IP地址的最前⾯为“1111”，所以地址的⽹络号取值于240~255之间。 在IP地址3种主要类型⾥，各保留了3个区域作为 私有地址 ，其地址范围如下： A类地址：10.0.0.0～10.255.255.255 B类地址：172.16.0.0～172.31.255.255 C类地址：192.168.0.0～192.168.255.255 回送地址：127.0.0.1。 也是本机地址，等效于localhost或本机IP。⼀般⽤于测试使⽤。例如：ping 127.0.0.1来测试本机TCP/IP是否正常。</p>
 <p>⼦⽹划分 <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ae97a646d936ddbbfd461d02.html">https://jingyan.baidu.com/article/ae97a646d936ddbbfd461d02.html</a> ⼦⽹掩码 </p>
-<p>⽹关 ：</p>
-<p>​       网关到底是什么呢？网关实质上是一个网络通向其他网络的IP地址。比如有网络A和网络B，网络A的IP地址范围为“192.168.1.1<del>192. 168.1.254”，子网掩码为255.255.255.0；网络B的IP地址范围为“192.168.2.1</del>192.168.2.254”，子网掩码为255.255.255.0。在没有路由器的情况下，两个网络之间是不能进行TCP/IP通信的，即使是两个网络连接在同一台交换机(或集线器)上，TCP/IP协议也会根据子网掩码(255.255.255.0)判定两个网络中的主机处在不同的网络里。而要实现这两个网络之间的通信，则必须通过网关。如果网络A中的主机发现数据包的目的主机不在本地网络中，就把数据包转发给它自己的网关，再由网关转发给网络B的网关，网络B的网关再转发给网络B的某个主机。网络B向网络A转发数据包的过程。所以说，只有设置好网关的IP地址，TCP/IP协议才能实现不同网络之间的相互通信。那么这个IP地址是哪台机器的IP地址呢？网关的IP地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器(实质上相当于一台路由器)、代理服务器(也相当于一台路由器)。</p>
+<p><strong>⽹关</strong> ：</p>
+<p>​       网关到底是什么呢？网关实质上是一个网络通向其他网络的IP地址。比如有网络A和网络B，网络A的IP地址范围为“192.168.1.1-192. 168.1.254”，子网掩码为255.255.255.0；网络B的IP地址范围为“192.168.2.1-192.168.2.254”，子网掩码为255.255.255.0。在没有路由器的情况下，两个网络之间是不能进行TCP/IP通信的，即使是两个网络连接在同一台交换机(或集线器)上，TCP/IP协议也会根据子网掩码(255.255.255.0)判定两个网络中的主机处在不同的网络里。而要实现这两个网络之间的通信，则必须通过网关。如果网络A中的主机发现数据包的目的主机不在本地网络中，就把数据包转发给它自己的网关，再由网关转发给网络B的网关，网络B的网关再转发给网络B的某个主机。网络B向网络A转发数据包的过程。所以说，只有设置好网关的IP地址，TCP/IP协议才能实现不同网络之间的相互通信。那么这个IP地址是哪台机器的IP地址呢？网关的IP地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器(实质上相当于一台路由器)、代理服务器(也相当于一台路由器)。</p>
 <p>　　在和 Novell NetWare 网络交互操作的上下文中，网关在 Windows 网络中使用的服务器信息块 (SMB) 协议以及 NetWare 网络使用的 NetWare 核心协议 (NCP) 之间起着桥梁的作用。网关也被称为 IP 路由器。<br>[编辑本段]什么是默认网关</p>
 <p>　　如果搞清了什么是网关，默认网关也就好理解了。就好像一个房间可以有多扇门一样，一台主机可以有多个网关。默认网关的意思是一台主机如果找不到可用的网关，就把数据包发给默认指定的网关，由这个网关来处理数据包。现在主机使用的网关，一般指的是默认网关。 </p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qiuzhongweiwei/article/details/80172529">https://blog.csdn.net/qiuzhongweiwei/article/details/80172529</a></p>
-<p>A段 192.x.x.x 255.0.0.0</p>
-<p>B段 192.168.x.x 255.255.0.0</p>
-<p>C段 192.168.1.x 255.255.255.0</p>
-<p><strong>查询本机IP地址</strong>： ip.cn ip3322.org  ipip.net  curl ifconfig.co    myip.ms</p>
-<h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>​     DNS（Domain Name System，域名系统），因特⽹上作为域名和IP地址相互映射的⼀个分布式数据库，能够使⽤户更⽅便 的访问互联⽹，⽽不⽤去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机名对应的IP地址的过程叫做域名解 析（或主机名解析）。DNS协议运⾏在UDP协议之上，使⽤端⼝号<strong>53</strong>。访问⽹站的实质就是解析其域名得到IP地址，再转向 其⽹站。</p>
-<p>​     一台计算机的解析步骤，以<a target="_blank" rel="noopener" href="http://www.baidu.com为例子/">www.baidu.com为例子</a></p>
-<p>1）系统⾸先会查找本地的DNS缓存和hosts⽂件信息，确认其中是否有与，域名<a target="_blank" rel="noopener" href="http://www.baidu.com所对应的ip地址.如/">www.baidu.com所对应的IP地址。如</a> 果有，就直接访问这个IP地址所对应的<a target="_blank" rel="noopener" href="http://www.baidu.com域名服务器./">www.baidu.com域名服务器。</a> </p>
+<p>详细链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qiuzhongweiwei/article/details/80172529">https://blog.csdn.net/qiuzhongweiwei/article/details/80172529</a></p>
+<p><strong>A段</strong> 192.x.x.x 255.0.0.0</p>
+<p><strong>B段</strong> 192.168.x.x 255.255.0.0</p>
+<p><strong>C段</strong> 192.168.1.x 255.255.255.0</p>
+<p><strong>查询本机IP地址</strong>： ip.cn / ip3322.org / ipip.net / curl ifconfig.co   / myip.ms</p>
+<h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>​     DNS（Domain Name System，域名系统），因特⽹上作为域名和IP地址相互映射的⼀个分布式数据库，能够使⽤户更⽅便 的访问互联⽹，⽽不⽤去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机名对应的IP地址的过程叫做域名解 析（或主机名解析）。DNS协议运⾏在UDP协议之上，使⽤<strong>端⼝号53</strong>。访问⽹站的实质就是解析其域名得到IP地址，再转向 其⽹站。</p>
+<p>​     一台计算机的解析步骤，以<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 为例子</p>
+<p>1）系统⾸先会查找本地的DNS缓存和hosts⽂件信息，确认其中是否有与，域名 <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>  所对应的IP地址。如 果有，就直接访问这个IP地址所对应的<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 域名服务器。 </p>
 <p>2）如果没有找到，那么，系统将会把浏览器的解析请求发送给本地主机所指定的DNS服务器，称为LDNS。如果LDNS服 务器中有域名<a target="_blank" rel="noopener" href="http://www.baidu.com所对应的ip地址,则返回给客户端的浏览器,如果没有,则继续请求其他dns服务器./">www.baidu.com所对应的IP地址，则返回给客户端的浏览器，如果没有，则继续请求其他DNS服务器。</a> </p>
-<p>3）LDNS服务器会从DNS系统的根（.）开始请求对域名<a target="_blank" rel="noopener" href="http://www.baidu.com的解析.根dns服务器全球只有13台,根域名/">www.baidu.com的解析。根DNS服务器全球只有13台，根域名</a> 服务器是没有域名<a target="_blank" rel="noopener" href="http://www.baidu.com解析记录的.但是它会有域名www.baidu.com所对应的顶级域.com的解析记录,因/">www.baidu.com解析记录的。但是它会有域名www.baidu.com所对应的顶级域.com的解析记录，因</a> 此直接把顶级域.com所对应的DNS地址返回给LDNS服务器。 </p>
-<p>4）LDNS服务器获取到顶级域.com对应的DNS服务器地址后，就会去.com服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com域名的解析./">www.baidu.com域名的解析。</a> 在顶级域名服务器也不会有<a target="_blank" rel="noopener" href="http://www.baidu.com的解析记录的.但是它有www.baidu.com的父级域名的解析记录,即/">www.baidu.com的解析记录的。但是它有www.baidu.com的⽗级域名的解析记录，即</a> baidu.com。因此顶级域名.com服务器⼜会把baidu.com所对应的DNS服务器的IP地址返回给LDNS。 </p>
-<p>5）LDNS服务器收到baidu.com所对应的IP地址后，就会去baidu.com域名服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com的域名解/">www.baidu.com的域名解</a> 析。Baidu.com域名对应的DNS服务器是该域名的授权DNS服务器。这个DNS服务器就是企业购买域名时⽤于管理解析的</p>
+<p>3）LDNS服务器会从DNS系统的根（.）开始请求对域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的解析。根DNS服务器全球只有13台，根域名 服务器是没有域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 解析记录的。但是它会有域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 所对应的顶级域.com的解析记录，因 此直接把顶级域.com所对应的DNS地址返回给LDNS服务器。 </p>
+<p>4）LDNS服务器获取到顶级域.com对应的DNS服务器地址后，就会去.com服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 域名的解析。 在顶级域名服务器也不会有<a target="_blank" rel="noopener" href="http://www.baidu.com的解析记录的.但是它有www.baidu.com/">www.baidu.com的解析记录的。但是它有www.baidu.com</a> 的⽗级域名的解析记录，即 baidu.com。因此顶级域名.com服务器⼜会把baidu.com所对应的DNS服务器的IP地址返回给LDNS。 </p>
+<p>5）LDNS服务器收到baidu.com所对应的IP地址后，就会去baidu.com域名服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的域名解析。baidu.com域名对应的DNS服务器是该域名的授权DNS服务器。这个DNS服务器就是企业购买域名时⽤于管理解析的.</p>
 
       </section>
 
