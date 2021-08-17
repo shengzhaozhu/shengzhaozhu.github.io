@@ -26,7 +26,7 @@
 
   
 
-  <title>网络安全相关术语 | 待割的韭菜</title>
+  <title>搭建Hexo遇到的问题 | 待割的韭菜</title>
 
   
 
@@ -100,11 +100,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">网络安全相关术语</h1>
+          <h1 class="title-wrap">搭建Hexo遇到的问题</h1>
           <h2 class="title-sub-wrap">
             <strong>Chang  Jue</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-08-16T16:57:29.000Z" itemprop="datePublished">2021-08-17</time>
+            <time  class="article-date" datetime="2021-08-16T16:20:39.000Z" itemprop="datePublished">2021-08-17</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -112,6 +112,12 @@
   
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E5%9F%BA%E7%A1%80/">🏷️ 基础</a></li>
+  
+    <li><a href="/tags/%E6%90%AD%E5%BB%BA/">🏷️ 搭建</a></li>
+  
+    <li><a href="/tags/Hexo/">🏷️ Hexo</a></li>
   
 </ul>
         </div>
@@ -135,62 +141,56 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p><strong>IP地址</strong>：IP地址（Internet Protocol Address）是指互联⽹协议地址，⼜译为⽹际协议地址。IP地址是IP协议提 供的⼀种统⼀的地址格式，它为互联⽹上的每⼀个⽹络和每⼀台主机分配⼀个逻辑地址，以此来屏蔽物理地址 的差异。渗透测试中，IP地址⼀般出现在服务器、PC、路由交换等设备中，可以把IP地址理解成我们⽣ 活中的家庭地址。</p>
-<p> <strong>VPS</strong>：Virtual Private Server 虚拟专⽤服务器技术，将⼀台服务器分割成多个虚拟专享服务器的优质服务。我 们⼀般⼈通常说的VPS就是⼀台⼈家虚拟出来的服务器，这台服务器有外⽹IP，我们可以装好系统并直接连 接。 </p>
-<p><strong>端⼝</strong>：”端⼝”是英⽂port的意译，可以认为是设备与外界通讯交流的进出⼝。 </p>
-<p><strong>⼀句话⽊马</strong>：指的是那些代码长度很短的脚本⽊马，⼀般只有⼀⾏，跟平常的⼀句话长度差不多。例如asp的其 中⼀种⼀句话⽊马： </p>
-<p><code>&lt;%execute(request(&quot;value&quot;))%&gt;</code>  asp</p>
-<p><code>&lt;?php eval($_POST[123]);?&gt;</code>php</p>
-<p><code>&lt;%eval request (&quot;pass&quot;)%&gt;</code>  asp</p>
-<p><code>&lt;%@ Page Language=&quot;Jscript&quot;%&gt; &lt;%eval(Request.Item[&quot;pass&quot;],&quot;unsafe&quot;);%&gt;</code>aspx</p>
-<p><strong>⼤马</strong>：指的是那些功能很多的脚本⽊马，⼀般都包含但不限于⽂件管理、cmd执⾏、可读写⽬录查找，例如 redhat的⼤马还有提权难易程度检测功能。</p>
-<p> <strong>Webshell</strong>：指的是已经在某个web植⼊脚本⽊马，且该⽊马能被解析成脚本⽂件，并能被访问到，能通过这个 ⽂件控制web。 </p>
-<p><strong>URL</strong>：专业⼀点就称为“统⼀资源定位符”。可以理解成链接。更有专业的对⽐：</p>
-<h2 id="⽹址和URL之间-的区别"><a href="#⽹址和URL之间-的区别" class="headerlink" title="⽹址和URL之间 的区别"></a>⽹址和URL之间 的区别</h2><ol>
-<li>从概念上对比</li>
-</ol>
-<ul>
-<li>URL，是Uniform Resource Location的缩写，译为“统一资源定位符”。通俗地说，URL是Internet上用来描述信息资源的字符串，主要用在各种WWW客户程序和服务器程序上，特别是著名的Mosaic。采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。</li>
-<li>网址，英文名：web site。在因特网中，如果要从一台计算机访问网上另一台计算机，就必须知道对方的网址。这里所说的网址实网址际上指两个内涵，即IP地址和域名地址。</li>
-</ul>
-<ol>
-<li>从结构上对比</li>
-</ol>
-<ul>
-<li>URL的格式由下列三部分组成：<ul>
-<li><a target="_blank" rel="noopener" href="http://mail.163.com/index.html">http://mail.163.com/index.html</a></li>
-<li>第一部分是协议（或称为服务方式）；</li>
-<li>第二部分是存有该资源的主机IP地址（有时也包括端口号）；</li>
-<li>第三部分是主机资源的具体地址。，如目录和文件名等。</li>
-<li>第一部分和第二部分之间用“：//”符号隔开，第二部分和第三部分用“/”符号隔开。第一部分和第二部分是不可缺少的，第三部分有时可以省略。</li>
-</ul>
-</li>
-<li>网址的结构<ul>
-<li>网址由两个或两个以上的词构成,中间由点号分隔开。最右边的那个词称为顶级域名。</li>
-</ul>
-</li>
-<li>下面是几个常见的顶级域名及其用法：<ul>
-<li>.COM–用于商业机构。它是最常见的顶级域名。任何人都可以注册.COM形式的域名。</li>
-<li>.NET–最初是用于网络组织，例如因特网服务商和维修商。现在任何人都可以注册以.NET结尾的域名。</li>
-<li>.ORG–是为各种组织包括非盈利组织而定的。现在，任何人都可以注册以.ORG结尾的域名。</li>
-</ul>
-</li>
-</ul>
-<p><strong>提权</strong>：也称权限提升，顾名思义，就是把我们⾃⼰的权限提起升⾼，提权都需要利⽤到漏洞。 </p>
-<p><strong>POC</strong>：全称proof of concept，译作“概念验证”，它可以是⼀段代码也可以是⼀个程序，⽤作验证某个漏洞是 存在的，没有破坏能⼒。</p>
-<p><strong>EXP</strong>：全称exploit，指的是漏洞利⽤程序，这种程序可以是任何语⾔编写的，具有破坏能⼒。 </p>
-<p><strong>payload</strong>：译作”有效载荷“，当exploit利⽤成功后将执⾏payload。 </p>
-<p><strong>shellcode</strong>：漏洞利⽤的过程，就是把shellcode发送到⽬标服务器，其中shellcode包含payload，如果shellcode 被成功执⾏，那么才会执⾏有效载荷payload，这个载荷可以是⼀条os命令，可以是⼀段⼆进制代码。 </p>
-<p><strong>CMS</strong>：内容管理系统，简单来说就是⼀种⽹站系统模板，很多⽹站都是⽤同⼀种模板改的。</p>
-<p> <strong>反序列化</strong>：只将字节序列转换成⽬标对象的过程。 </p>
-<p> <strong>Fuzz测试</strong>：是⼀种安全测试⽅法(模糊测试)，他介于完全的⼿⼯测试和完全的⾃动化测试之间。</p>
-<p>​            模糊测试充分利用了机器的能力：随机生成和发送数据；同时，也尝试将安全专家在安全性方面的经验引入进来。从执行过程来说，模糊测试的执行过程非常简单：</p>
-<ol>
-<li>测试工具通过随机或是半随机的方式生成大量数据；</li>
-<li>测试工具将生成的数据发送给被测试的系统（输入）；</li>
-<li>测试工具检测被测系统的状态（如是否能够响应，响应是否正确等）；</li>
-<li>根据被测系统的状态判断是否存在潜在的安全漏洞。</li>
-</ol>
+        <h1 id="环境问题"><a href="#环境问题" class="headerlink" title="环境问题"></a>环境问题</h1><p> Node.js 建议版本在 12.22及一下，不然会出现兼容性错误</p>
+<p>git clone出现 fatal: unable to access ‘<a target="_blank" rel="noopener" href="https://github.com/...&#39;">https://github.com/...&#39;</a></p>
+<p>出现这种问题一般是网络问题：<br>      在开启代理的前提下，手动配置git的代理。git客户端输入如下两个命令就可以了。</p>
+<p>​    <code>git config --global http.proxy http://127.0.0.1:1080</code></p>
+<p>​    <code>git config --global https.proxy http://127.0.0.1:1080</code></p>
+<p>http://也可以改成sockets5://,但是区别在于：socks5不支持通过pubkey免密登录github，每次提交代码只能输入用户名和密码。http可以支持免密登录。</p>
+<p>取消代理：</p>
+<p>​    <code>git config --global --unset http.proxy</code></p>
+<p>​    <code>git config --global --unset https.proxy</code></p>
+<h1 id="使用问题"><a href="#使用问题" class="headerlink" title="使用问题"></a>使用问题</h1><p>可以在博客根目录 <code>_config.yml</code> 中修改大部分的配置。</p>
+<p>网站</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>title</code></td>
+<td align="left">网站标题</td>
+</tr>
+<tr>
+<td align="left"><code>subtitle</code></td>
+<td align="left">网站副标题</td>
+</tr>
+<tr>
+<td align="left"><code>description</code></td>
+<td align="left">网站描述</td>
+</tr>
+<tr>
+<td align="left"><code>keywords</code></td>
+<td align="left">网站的关键词。支持多个关键词。</td>
+</tr>
+<tr>
+<td align="left"><code>author</code></td>
+<td align="left">您的名字</td>
+</tr>
+<tr>
+<td align="left"><code>language</code></td>
+<td align="left">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 <code>zh-Hans</code>和 <code>zh-CN</code>。</td>
+</tr>
+<tr>
+<td align="left"><code>timezone</code></td>
+<td align="left">网站时区。Hexo 默认使用您电脑的时区。请参考 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">时区列表</a> 进行设置，如 <code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。一般的，对于中国大陆地区可以使用 <code>Asia/Shanghai</code>。</td>
+</tr>
+</tbody></table>
+<p>其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</p>
+<p>详情查看：</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">https://hexo.io/zh-cn/docs/configuration</a></p>
 
       </section>
 
@@ -198,20 +198,20 @@
       
         <nav class="article-nav">
           
-          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
     <div class="card-text">
       
-        <a href="/2021/08/17/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">网络基础知识</h2>
+        <a href="/2021/08/17/hexo/Hexo%E6%90%AD%E5%BB%BA/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hexo搭建</h2>
         </a>
       
-      <div class="card-text--row">Older</div>
+      <div class="card-text--row">Newer</div>
     </div>
   </article>
 </div>
+          
           
         </nav>
       
@@ -247,7 +247,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>4</span>
+        <span>7</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -259,7 +259,7 @@
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        2
+        4
       </div>
     </div>
   </div>
@@ -293,7 +293,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/%E5%9F%BA%E7%A1%80/">
-            基础 (4)
+            基础 (7)
           </a>
         </li>
       
@@ -310,7 +310,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 10px;" class="tags-cloud-0">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 10px;" class="tags-cloud-0">搭建</a>
+      <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 10px;" class="tags-cloud-0">-网络</a> <a href="/tags/Hexo/" style="font-size: 20px;" class="tags-cloud-10">Hexo</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 20px;" class="tags-cloud-10">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 20px;" class="tags-cloud-10">搭建</a>
     </div>
   </div>
 </section>

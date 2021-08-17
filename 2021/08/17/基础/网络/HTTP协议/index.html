@@ -26,7 +26,7 @@
 
   
 
-  <title>Hexo搭建 | 待割的韭菜</title>
+  <title>HTTP协议 | 待割的韭菜</title>
 
   
 
@@ -100,11 +100,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">Hexo搭建</h1>
+          <h1 class="title-wrap">HTTP协议</h1>
           <h2 class="title-sub-wrap">
             <strong>Chang  Jue</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-08-16T16:31:29.000Z" itemprop="datePublished">2021-08-17</time>
+            <time  class="article-date" datetime="2021-08-17T13:51:29.000Z" itemprop="datePublished">2021-08-17</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -113,9 +113,7 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E5%9F%BA%E7%A1%80/">🏷️ 基础</a></li>
-  
-    <li><a href="/tags/%E6%90%AD%E5%BB%BA/">🏷️ 搭建</a></li>
+    <li><a href="/tags/%E7%BD%91%E7%BB%9C/">🏷️ -网络</a></li>
   
 </ul>
         </div>
@@ -139,63 +137,9 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>前提:Github的个人仓库、Git环境、Node.js、Hexo</p>
-<h2 id="Github创建个人仓库："><a href="#Github创建个人仓库：" class="headerlink" title="Github创建个人仓库："></a>Github创建个人仓库：</h2><p>如果没有Github，首先需要注册一个Github账号新建一个仓库</p>
-<p><strong>仓库名称格式为：用户名.github.io。</strong></p>
-<h1 id=""><a href="#" class="headerlink" title=""></a><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-1.png" alt="1-1"></h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p> Windows 直接下载<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git - Downloading Package (git-scm.com)</a></p>
-<p> 下载安装相应的版本，安装过程无脑下一步。</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-2.png" alt="image-20210816190540997"></p>
-<p>然后打开Git Bash 配置 user.name和user.email配置信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;你的GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>生成ssh密钥文件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;你的GitHub注册邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>输入相应命令后按三次回车生成密钥文件</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-3.png" alt="image-20210816191224482"></p>
-<p>找到路径下生成的文件，使用文本编辑器打开id_rsa.pub复制所有内容</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-4.png" alt="image-20210816191249517"></p>
-<p>来到Github_Settings_keys页面，new SSH Key</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-5.png" alt="image-20210816191142398"></p>
-<p>将id_rsa.pub粘贴，使用 ssh <a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#99;&#x6f;&#109;</a> 进行验证出现successfully验证成功。</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-6.png" alt="image-20210816191558457"></p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>Hexo 基于Node.js，Node.js下载地址:<a target="_blank" rel="noopener" href="http://nodejs.cn/">Node.js 中文网 (nodejs.cn)</a></p>
-<p>下载相应的安装包，安装过程也是无脑下一步，安装完成进行验证</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-7.png" alt="image-20210816191839792"></p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>使用npm命令安装Hexo，输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli </span><br></pre></td></tr></table></figure>
-
-<p>安装完成后创建我们的博客：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-
-<p>此时会在当前目录生成一个blog的文件夹里面有Hexo基本的文件，<strong>接着进入到blog文件夹下</strong></p>
-<p>分别按顺序输入以下三条命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new 12123 <span class="comment">#创建一个新的文章标题为 12123</span></span><br><span class="line">hexo g   <span class="comment">#生成文件</span></span><br><span class="line">hexo s    <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
-
-<p>此时访问localhost:4000就会出现下面的页面。此时Hexo在本地搭建完成</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-8.png" alt="image-20210816202926667"></p>
-<h2 id="常用的Hexo命令"><a href="#常用的Hexo命令" class="headerlink" title="常用的Hexo命令"></a>常用的Hexo命令</h2><p>npm install hexo -g #安装Hexo<br>npm update hexo -g #升级<br>hexo init #初始化博客</p>
-<p>命令简写<br>hexo n “我的博客” == hexo new “我的博客” #新建文章<br>hexo g == hexo generate #生成<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署</p>
-<p>hexo server #Hexo会监视文件变动并自动更新，无须重启服务器<br>hexo server -s #静态模式<br>hexo server -p 5000 #更改端口<br>hexo server -i 192.168.1.1 #自定义 IP<br>hexo clean #清除缓存，若是网页正常情况下可以忽略这条命令</p>
-<h2 id="部署网站"><a href="#部署网站" class="headerlink" title="部署网站"></a><strong>部署网站</strong></h2><p>​    上面只是在本地预览，接下来要做的是要将网站部署到Github上</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-9-1.png" alt="image-20210816204432519"></p>
-<p>下一步将我们的Hexo与GitHub关联起来，打开站点的配置文件_config.yml，翻到最后修改为：</p>
-<p>deploy:<br>type: git<br>repo:<br>branch: main参考如下：</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-9.png" alt="image-20210816204843762"></p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-10.png" alt="image-20210816204631821"></p>
-<p>保存站点配置文件。</p>
-<p>其实就是给hexo d 这个命令做相应的配置，让hexo知道你要把blog部署在哪个位置，很显然，我们部署在我们GitHub的仓库里。最后安装Git部署插件，输入命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p>这时，我们分别输入三条命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="comment">#清理缓存</span></span><br><span class="line">hexo g   <span class="comment">#生成文件</span></span><br><span class="line">hexo d   <span class="comment">#发布文件</span></span><br></pre></td></tr></table></figure>
-
-<p>其实第三条的 hexo d 就是部署网站命令，d是deploy的缩写。完成后，打开浏览器，在地址栏输入你的放置个人网站的仓库路径，XXX.github.io就可以访问了。</p>
-<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a><strong>绑定域名</strong></h2><p>​        如果不绑定域名我们只能使用xxx.github.io,如果我们使用自己的域名，这个时候需要将域名进行绑定。没有域名的可以去购买一个域名服务器。购买后将我们的域名进行如下绑定：</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-11.png" alt="image-20210817200048241"></p>
-<p>​        然后在我们部署到的github仓库上进行设置，选择我们部署的仓库，点击Settings，在Pages目录下设置Custom domain。</p>
-<p><img src="/images/Hexo%E6%90%AD%E5%BB%BA/1-12.png" alt="image-20210817202058475"></p>
-<p>点击Save后就可以保存当前页面。</p>
+        <h2 id="HTTP协议简介"><a href="#HTTP协议简介" class="headerlink" title="HTTP协议简介"></a>HTTP协议简介</h2><p>超文本传输协议（英文：<strong>H</strong>yper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol，缩写：HTTP）是一种用于分布式、协作式和超媒体信息系统的应用层协议。HTTP是万维网的数据通信的基础。</p>
+<p>HTTP的发展是由蒂姆·伯纳斯-李于1989年在欧洲核子研究组织（CERN）所发起。HTTP的标准制定由万维网协会（World Wide Web Consortium，W3C）和互联网工程任务组（Internet Engineering Task Force，IETF）进行协调，最终发布了一系列的RFC，其中最著名的是1999年6月公布的 RFC 2616，定义了HTTP协议中现今广泛使用的一个版本——HTTP 1.1。</p>
+<p>2014年12月，互联网工程任务组（IETF）的Hypertext Transfer Protocol Bis（httpbis）工作小组将HTTP/2标准提议递交至IESG进行讨论，于2015年2月17日被批准。 HTTP/2标准于2015年5月以RFC 7540正式发表，取代HTTP 1.1成为HTTP的实现标准。</p>
 
       </section>
 
@@ -208,8 +152,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/08/17/%E9%9A%90%E8%97%8F%E8%87%AA%E5%B7%B1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">隐藏自己</h2>
+        <a href="/2021/08/17/%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C/web%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1%E7%9A%84%E8%BF%87%E7%A8%8B/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">网络基础知识</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -217,6 +161,20 @@
   </article>
 </div>
           
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/08/17/%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">网络基础知识</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
           
         </nav>
       
@@ -252,7 +210,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>4</span>
+        <span>7</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -264,7 +222,7 @@
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        2
+        4
       </div>
     </div>
   </div>
@@ -298,7 +256,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/%E5%9F%BA%E7%A1%80/">
-            基础 (4)
+            基础 (7)
           </a>
         </li>
       
@@ -315,7 +273,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 10px;" class="tags-cloud-0">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 10px;" class="tags-cloud-0">搭建</a>
+      <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 10px;" class="tags-cloud-0">-网络</a> <a href="/tags/Hexo/" style="font-size: 20px;" class="tags-cloud-10">Hexo</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 20px;" class="tags-cloud-10">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 20px;" class="tags-cloud-10">搭建</a>
     </div>
   </div>
 </section>

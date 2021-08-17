@@ -26,7 +26,7 @@
 
   
 
-  <title>网络基础知识 | 待割的韭菜</title>
+  <title>隐藏自己 | 待割的韭菜</title>
 
   
 
@@ -100,7 +100,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">网络基础知识</h1>
+          <h1 class="title-wrap">隐藏自己</h1>
           <h2 class="title-sub-wrap">
             <strong>Chang  Jue</strong>
             <span>发布于</span>
@@ -135,29 +135,14 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="IP基础知识"><a href="#IP基础知识" class="headerlink" title="IP基础知识"></a>IP基础知识</h2><p><strong>IP地址</strong>（Internet Protocol Address）是指互联⽹协议地址，⼜译为⽹际协议地址。IP地址是IP协议提供的⼀种 统⼀的地址格式，它为互联⽹上的每⼀个⽹络和每⼀台主机分配⼀个逻辑地址，以此来屏蔽物理地址的差异。 IP地址分类 IP地址根据⽹络号和主机号来分，分为A、B、C三类及特殊地址D、E。 全0和全1的都保留不⽤。 </p>
-<p><strong>A类</strong>：(1.0.0.0-126.0.0.0)（默认⼦⽹掩码：255.0.0.0或 0xFF000000）第⼀个字节为⽹络号，后三个字节为 主机号。该类IP地址的最前⾯为“0”，所以地址的⽹络号取值于1~126之间。⼀般⽤于⼤型⽹络。 </p>
-<p><strong>B类</strong>：(128.0.0.0-191.255.0.0)（默认⼦⽹掩码：255.255.0.0或0xFFFF0000）前两个字节为⽹络号，后两个 字节为主机号。该类IP地址的最前⾯为“10”，所以地址的⽹络号取值于128~191之间。⼀般⽤于中等规模⽹ 络。</p>
-<p><strong>C类</strong>：(192.0.0.0-223.255.255.0)（⼦⽹掩码：255.255.255.0或 0xFFFFFF00）前三个字节为⽹络号，最后 ⼀个字节为主机号。该类IP地址的最前⾯为“110”，所以地址的⽹络号取值于192~223之间。⼀般⽤于⼩型 ⽹络。 </p>
-<p><strong>D类</strong>：是多播地址。该类IP地址的最前⾯为“1110”，所以地址的⽹络号取值于224~239之间。⼀般⽤于多路 ⼴播⽤户[1] 。</p>
-<p><strong>E类</strong>：是保留地址。该类IP地址的最前⾯为“1111”，所以地址的⽹络号取值于240~255之间。 在IP地址3种主要类型⾥，各保留了3个区域作为 私有地址 ，其地址范围如下： A类地址：10.0.0.0～10.255.255.255 B类地址：172.16.0.0～172.31.255.255 C类地址：192.168.0.0～192.168.255.255 回送地址：127.0.0.1。 也是本机地址，等效于localhost或本机IP。⼀般⽤于测试使⽤。例如：ping 127.0.0.1来测试本机TCP/IP是否正常。</p>
-<p>⼦⽹划分 <a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/ae97a646d936ddbbfd461d02.html">https://jingyan.baidu.com/article/ae97a646d936ddbbfd461d02.html</a> ⼦⽹掩码 </p>
-<p><strong>⽹关</strong> ：</p>
-<p>​       网关到底是什么呢？网关实质上是一个网络通向其他网络的IP地址。比如有网络A和网络B，网络A的IP地址范围为“192.168.1.1-192. 168.1.254”，子网掩码为255.255.255.0；网络B的IP地址范围为“192.168.2.1-192.168.2.254”，子网掩码为255.255.255.0。在没有路由器的情况下，两个网络之间是不能进行TCP/IP通信的，即使是两个网络连接在同一台交换机(或集线器)上，TCP/IP协议也会根据子网掩码(255.255.255.0)判定两个网络中的主机处在不同的网络里。而要实现这两个网络之间的通信，则必须通过网关。如果网络A中的主机发现数据包的目的主机不在本地网络中，就把数据包转发给它自己的网关，再由网关转发给网络B的网关，网络B的网关再转发给网络B的某个主机。网络B向网络A转发数据包的过程。所以说，只有设置好网关的IP地址，TCP/IP协议才能实现不同网络之间的相互通信。那么这个IP地址是哪台机器的IP地址呢？网关的IP地址是具有路由功能的设备的IP地址，具有路由功能的设备有路由器、启用了路由协议的服务器(实质上相当于一台路由器)、代理服务器(也相当于一台路由器)。</p>
-<p>　　在和 Novell NetWare 网络交互操作的上下文中，网关在 Windows 网络中使用的服务器信息块 (SMB) 协议以及 NetWare 网络使用的 NetWare 核心协议 (NCP) 之间起着桥梁的作用。网关也被称为 IP 路由器。<br>[编辑本段]什么是默认网关</p>
-<p>　　如果搞清了什么是网关，默认网关也就好理解了。就好像一个房间可以有多扇门一样，一台主机可以有多个网关。默认网关的意思是一台主机如果找不到可用的网关，就把数据包发给默认指定的网关，由这个网关来处理数据包。现在主机使用的网关，一般指的是默认网关。 </p>
-<p>详细链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qiuzhongweiwei/article/details/80172529">https://blog.csdn.net/qiuzhongweiwei/article/details/80172529</a></p>
-<p><strong>A段</strong> 192.x.x.x 255.0.0.0</p>
-<p><strong>B段</strong> 192.168.x.x 255.255.0.0</p>
-<p><strong>C段</strong> 192.168.1.x 255.255.255.0</p>
-<p><strong>查询本机IP地址</strong>： ip.cn / ip3322.org / ipip.net / curl ifconfig.co   / myip.ms</p>
-<h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>​     DNS（Domain Name System，域名系统），因特⽹上作为域名和IP地址相互映射的⼀个分布式数据库，能够使⽤户更⽅便 的访问互联⽹，⽽不⽤去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机名对应的IP地址的过程叫做域名解 析（或主机名解析）。DNS协议运⾏在UDP协议之上，使⽤<strong>端⼝号53</strong>。访问⽹站的实质就是解析其域名得到IP地址，再转向 其⽹站。</p>
-<p>​     一台计算机的解析步骤，以<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 为例子</p>
-<p>1）系统⾸先会查找本地的DNS缓存和hosts⽂件信息，确认其中是否有与，域名 <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a>  所对应的IP地址。如 果有，就直接访问这个IP地址所对应的<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 域名服务器。 </p>
-<p>2）如果没有找到，那么，系统将会把浏览器的解析请求发送给本地主机所指定的DNS服务器，称为LDNS。如果LDNS服 务器中有域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 所对应的IP地址，则返回给客户端的浏览器，如果没有，则继续请求其他DNS服务器。 </p>
-<p>3）LDNS服务器会从DNS系统的根（.）开始请求对域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的解析。根DNS服务器全球只有13台，根域名 服务器是没有域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 解析记录的。但是它会有域名<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 所对应的顶级域.com的解析记录，因 此直接把顶级域.com所对应的DNS地址返回给LDNS服务器。 </p>
-<p>4）LDNS服务器获取到顶级域.com对应的DNS服务器地址后，就会去.com服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 域名的解析。 在顶级域名服务器也不会有<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的解析记录的。但是它有<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的⽗级域名的解析记录，即 baidu.com。因此顶级域名.com服务器⼜会把baidu.com所对应的DNS服务器的IP地址返回给LDNS。 </p>
-<p>5）LDNS服务器收到baidu.com所对应的IP地址后，就会去baidu.com域名服务器请求对<a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a> 的域名解析。baidu.com域名对应的DNS服务器是该域名的授权DNS服务器。这个DNS服务器就是企业购买域名时⽤于管理解析的.</p>
+        <p>1.VPN</p>
+<p>2.代理</p>
+<p>​    v2rayN    <a target="_blank" rel="noopener" href="http://www.fastvnet.net/">www.fastvnet.net</a> 或者 .com  快</p>
+<p>​    shadowsocks</p>
+<p>​    shadowspclssr</p>
+<p>​    proxifier </p>
+<p>​    999yun.club  便宜</p>
+<p>   cylink.press   节点多</p>
 
       </section>
 
@@ -170,7 +155,7 @@
     
     <div class="card-text">
       
-        <a href="/2021/08/17/%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD/" itemprop="url">
+        <a href="/2021/08/17/%E5%9F%BA%E7%A1%80/%E5%85%B6%E5%AE%83/%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">网络安全相关术语</h2>
         </a>
       
@@ -185,8 +170,8 @@
     
     <div class="card-text">
       
-        <a href="/2021/08/17/%E9%9A%90%E8%97%8F%E8%87%AA%E5%B7%B1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">隐藏自己</h2>
+        <a href="/2021/08/17/hexo/Hexo%E6%90%AD%E5%BB%BA/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Hexo搭建</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -228,7 +213,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>4</span>
+        <span>7</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -240,7 +225,7 @@
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        2
+        4
       </div>
     </div>
   </div>
@@ -274,7 +259,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/%E5%9F%BA%E7%A1%80/">
-            基础 (4)
+            基础 (7)
           </a>
         </li>
       
@@ -291,7 +276,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 10px;" class="tags-cloud-0">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 10px;" class="tags-cloud-0">搭建</a>
+      <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 10px;" class="tags-cloud-0">-网络</a> <a href="/tags/Hexo/" style="font-size: 20px;" class="tags-cloud-10">Hexo</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 20px;" class="tags-cloud-10">基础</a> <a href="/tags/%E6%90%AD%E5%BB%BA/" style="font-size: 20px;" class="tags-cloud-10">搭建</a>
     </div>
   </div>
 </section>

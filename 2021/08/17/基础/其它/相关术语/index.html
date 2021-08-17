@@ -26,7 +26,7 @@
 
   
 
-  <title>关于我 | 待割的韭菜</title>
+  <title>网络安全相关术语 | 待割的韭菜</title>
 
   
 
@@ -47,7 +47,7 @@
   <div class="root-container">
     
 <!-- header container -->
-<header class="header-container">
+<header class="header-container post">
   
     <div class="post-image" style="background-image: url(https://qiniu.sukoshi.xyz/src/images/68686407_p0.jpg)"></div>
   
@@ -97,36 +97,151 @@
 
   
   
-
-  
-  
     <div class="header-content">
-      <div class="post-text layout-block layout-padding">
-        <h1 class="title-wrap">关于我</h1>
-        
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">网络安全相关术语</h1>
+          <h2 class="title-sub-wrap">
+            <strong>Chang  Jue</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2021-08-16T16:57:29.000Z" itemprop="datePublished">2021-08-17</time>
+          </h2>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/%E5%9F%BA%E7%A1%80/">📒 基础</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+</ul>
+        </div>
       </div>
     </div>
+  
+
+  
   
   
 </header>
 
-    <!-- 分页(其他自定义页面) -->
+    <!-- 文章 -->
 
-<!-- 自定义页面 -->
-
+<!-- 文章内容 -->
 <div class="body-container">
   <article class="content-container layout-block post-container">
     <div class="article-info">
       
+      
+      
+      
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <p><strong>IP地址</strong>：IP地址（Internet Protocol Address）是指互联⽹协议地址，⼜译为⽹际协议地址。IP地址是IP协议提 供的⼀种统⼀的地址格式，它为互联⽹上的每⼀个⽹络和每⼀台主机分配⼀个逻辑地址，以此来屏蔽物理地址 的差异。渗透测试中，IP地址⼀般出现在服务器、PC、路由交换等设备中，可以把IP地址理解成我们⽣ 活中的家庭地址。</p>
+<p> <strong>VPS</strong>：Virtual Private Server 虚拟专⽤服务器技术，将⼀台服务器分割成多个虚拟专享服务器的优质服务。我 们⼀般⼈通常说的VPS就是⼀台⼈家虚拟出来的服务器，这台服务器有外⽹IP，我们可以装好系统并直接连 接。 </p>
+<p><strong>端⼝</strong>：”端⼝”是英⽂port的意译，可以认为是设备与外界通讯交流的进出⼝。 </p>
+<p><strong>⼀句话⽊马</strong>：指的是那些代码长度很短的脚本⽊马，⼀般只有⼀⾏，跟平常的⼀句话长度差不多。例如asp的其 中⼀种⼀句话⽊马： </p>
+<p><code>&lt;%execute(request(&quot;value&quot;))%&gt;</code>  asp</p>
+<p><code>&lt;?php eval($_POST[123]);?&gt;</code>php</p>
+<p><code>&lt;%eval request (&quot;pass&quot;)%&gt;</code>  asp</p>
+<p><code>&lt;%@ Page Language=&quot;Jscript&quot;%&gt; &lt;%eval(Request.Item[&quot;pass&quot;],&quot;unsafe&quot;);%&gt;</code>aspx</p>
+<p><strong>⼤马</strong>：指的是那些功能很多的脚本⽊马，⼀般都包含但不限于⽂件管理、cmd执⾏、可读写⽬录查找，例如 redhat的⼤马还有提权难易程度检测功能。</p>
+<p> <strong>Webshell</strong>：指的是已经在某个web植⼊脚本⽊马，且该⽊马能被解析成脚本⽂件，并能被访问到，能通过这个 ⽂件控制web。 </p>
+<p><strong>URL</strong>：专业⼀点就称为“统⼀资源定位符”。可以理解成链接。更有专业的对⽐：</p>
+<h2 id="⽹址和URL之间-的区别"><a href="#⽹址和URL之间-的区别" class="headerlink" title="⽹址和URL之间 的区别"></a>⽹址和URL之间 的区别</h2><ol>
+<li>从概念上对比</li>
+</ol>
+<ul>
+<li>URL，是Uniform Resource Location的缩写，译为“统一资源定位符”。通俗地说，URL是Internet上用来描述信息资源的字符串，主要用在各种WWW客户程序和服务器程序上，特别是著名的Mosaic。采用URL可以用一种统一的格式来描述各种信息资源，包括文件、服务器的地址和目录等。</li>
+<li>网址，英文名：web site。在因特网中，如果要从一台计算机访问网上另一台计算机，就必须知道对方的网址。这里所说的网址实网址际上指两个内涵，即IP地址和域名地址。</li>
+</ul>
+<ol>
+<li>从结构上对比</li>
+</ol>
+<ul>
+<li>URL的格式由下列三部分组成：<ul>
+<li><a target="_blank" rel="noopener" href="http://mail.163.com/index.html">http://mail.163.com/index.html</a></li>
+<li>第一部分是协议（或称为服务方式）；</li>
+<li>第二部分是存有该资源的主机IP地址（有时也包括端口号）；</li>
+<li>第三部分是主机资源的具体地址。，如目录和文件名等。</li>
+<li>第一部分和第二部分之间用“：//”符号隔开，第二部分和第三部分用“/”符号隔开。第一部分和第二部分是不可缺少的，第三部分有时可以省略。</li>
+</ul>
+</li>
+<li>网址的结构<ul>
+<li>网址由两个或两个以上的词构成,中间由点号分隔开。最右边的那个词称为顶级域名。</li>
+</ul>
+</li>
+<li>下面是几个常见的顶级域名及其用法：<ul>
+<li>.COM–用于商业机构。它是最常见的顶级域名。任何人都可以注册.COM形式的域名。</li>
+<li>.NET–最初是用于网络组织，例如因特网服务商和维修商。现在任何人都可以注册以.NET结尾的域名。</li>
+<li>.ORG–是为各种组织包括非盈利组织而定的。现在，任何人都可以注册以.ORG结尾的域名。</li>
+</ul>
+</li>
+</ul>
+<p><strong>提权</strong>：也称权限提升，顾名思义，就是把我们⾃⼰的权限提起升⾼，提权都需要利⽤到漏洞。 </p>
+<p><strong>POC</strong>：全称proof of concept，译作“概念验证”，它可以是⼀段代码也可以是⼀个程序，⽤作验证某个漏洞是 存在的，没有破坏能⼒。</p>
+<p><strong>EXP</strong>：全称exploit，指的是漏洞利⽤程序，这种程序可以是任何语⾔编写的，具有破坏能⼒。 </p>
+<p><strong>payload</strong>：译作”有效载荷“，当exploit利⽤成功后将执⾏payload。 </p>
+<p><strong>shellcode</strong>：漏洞利⽤的过程，就是把shellcode发送到⽬标服务器，其中shellcode包含payload，如果shellcode 被成功执⾏，那么才会执⾏有效载荷payload，这个载荷可以是⼀条os命令，可以是⼀段⼆进制代码。 </p>
+<p><strong>CMS</strong>：内容管理系统，简单来说就是⼀种⽹站系统模板，很多⽹站都是⽤同⼀种模板改的。</p>
+<p> <strong>反序列化</strong>：只将字节序列转换成⽬标对象的过程。 </p>
+<p> <strong>Fuzz测试</strong>：是⼀种安全测试⽅法(模糊测试)，他介于完全的⼿⼯测试和完全的⾃动化测试之间。</p>
+<p>​            模糊测试充分利用了机器的能力：随机生成和发送数据；同时，也尝试将安全专家在安全性方面的经验引入进来。从执行过程来说，模糊测试的执行过程非常简单：</p>
+<ol>
+<li>测试工具通过随机或是半随机的方式生成大量数据；</li>
+<li>测试工具将生成的数据发送给被测试的系统（输入）；</li>
+<li>测试工具检测被测系统的状态（如是否能够响应，响应是否正确等）；</li>
+<li>根据被测系统的状态判断是否存在潜在的安全漏洞。</li>
+</ol>
+
       </section>
 
       
       
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/08/17/%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">网络基础知识</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+    <div class="card-text">
+      
+        <a href="/2021/08/17/%E5%9F%BA%E7%A1%80/%E5%85%B6%E5%AE%83/%E9%9A%90%E8%97%8F%E8%87%AA%E5%B7%B1/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">隐藏自己</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
 
-      
-      
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+
+  
+  
+
+
+      </section>
     </div>
     <div class="widget-info">
       <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -163,6 +278,8 @@
     </div>
   </div>
 </section>
+
+      
 
       
 <section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
@@ -214,7 +331,6 @@
     </div>
   </article>
 </div>
-
 
     <!-- footer container -->
 <footer id="footer" class="footer">
